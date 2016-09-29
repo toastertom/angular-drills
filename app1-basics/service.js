@@ -1,6 +1,6 @@
-app.service('services', function () {
+angular.module('myApp').service('services', function () {
 
-  var myArray = ['Jimmy', 'Sandra', 'Blake', 'Harry'];
+var myArray = [{name:'Jimmy'}, {name:'Sandra'}, {name:'Blake'}, {name:'Harry'}];
 
     this.getArray = function () {
       return myArray;

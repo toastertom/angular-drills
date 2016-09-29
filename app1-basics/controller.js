@@ -1,7 +1,7 @@
-app.controller('MainController',['$scope', function ($scope, service) {
+angular.module('myApp').controller('MainController', function ($scope, services) {
 
 (function getArray() {
-  $scope.myArray = service.getArray();
+  $scope.myArray = services.getArray();
 })()
 
-}])
+});
