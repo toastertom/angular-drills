@@ -1,14 +1,25 @@
 <html ng-app="myApp">
 	<body ng-controller="MainController">
+
 		<h3>Question 1</h3>
 		<input ng-model="newText" type="text" placeholder="Type Here Copy-Cat"></input>
 		<br/>
 		<p>{{newText}}</p>
+
 		<hr/>
+
 		<h3>Question 2</h3>
 		<ul ng-repeat="array in myArray">
 			<li>{{array.name}}</li>
 		</ul>
+
+		<hr/>
+
+		<h3>Question 3</h3>
+		<input placeholder="Filter"></input>
+		<div ng-repeat="user in users">
+			<span>{{user.firstName}} {{user.LastName}}</span>
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"> : </script>
 		<script src="app.js"></script>

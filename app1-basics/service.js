@@ -6,4 +6,30 @@ var myArray = [{name:'Jimmy'}, {name:'Sandra'}, {name:'Blake'}, {name:'Harry'}];
       return myArray;
     }
 
+var users = [
+  {
+    firstName: 'Blake',
+    LastName: 'Trainer'
+  },
+  {
+    firstName: 'Tanner',
+    LastName: 'Baldwin'
+  },
+  {
+    firstName: 'sara',
+    LastName: 'Hinder'
+  },
+  {
+    firstName: 'Samule',
+    LastName: 'Henderson'
+  },
+  {
+    firstName: 'Jasmine',
+    LastName: 'johnson'
+  }
+];
+
+  this.getUsers = function (){
+    return users;
+  }
 })
