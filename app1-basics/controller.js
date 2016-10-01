@@ -13,7 +13,8 @@ $scope.search = '';
 
 $scope.getPerson = function (character) {
   services.getStarWarsData(character).then(function (response) {
-    $scope.getPerson = response;
+    console.log(11111, response)
+    $scope.characters = response;
   })
 }
 });

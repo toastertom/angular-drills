@@ -35,14 +35,20 @@
 
 		<button ng-click="getPerson(character)">Search</button>
 	</div>
-	<form>
-		<tr><th>Full Name </th><th> Birth Year </th><th> Homeworld</th></tr>
 
-		<tr>
-			<!-- How do I access my data in my new array in service? -->
-			<td>{{obj.name}}</td>
-		</tr>
-	</form>
+
+		<div ng-repeat="person in characters">
+			<h4>{{person.name}}:</h4>
+			<ul>
+				<li>{{person.gender}}</li>
+				<li>{{person.homeworld}}</li>
+				<li>{{person.species}}</li>
+				<li>{{person.url}}</li>
+			</ul>
+
+		</div>
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"> : </script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
