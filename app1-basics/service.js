@@ -25,7 +25,7 @@ var users = [
   },
   {
     firstName: 'Jasmine',
-    LastName: 'johnson'
+    LastName: 'Johnson'
   }
 ];
 

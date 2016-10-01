@@ -8,4 +8,5 @@ angular.module('myApp').controller('MainController', function ($scope, services)
   $scope.users = services.getUsers();
 })();
 
+$scope.search = '';
 });
