@@ -40,8 +40,21 @@ this.getStarWarsData = function (character) {
     method: 'GET',
     url: 'http://swapi.co/api/people'
   }).then(function (response) {
+
+    var filterData = response.data.results;
+    var responseData= [];
+    for (var i = 0; i < filterData.length; i++){
+      var obj = {
+        name: filterData[i].name,
+        gender: filterData[i].gender,
+        homeworld: filterData[i].homeworld,
+        url: filterData[i].url,
+        species: filterData[i].species[0]
+      }
+      responseData.push(obj);
+  }
     defer.resolve(response);
-    console.log(response);
+    console.log(responseData);
   })
   return defer.promise;
 }
